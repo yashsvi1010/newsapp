@@ -41,7 +41,7 @@ const News = (props) => {
   };
 
   useEffect(() => {
-    document.title = `${capitalizeFirstLetter(props.category)}- NewsHooter`;
+    document.title = `NewsHooter- ${capitalizeFirstLetter(props.category)}`;
     updateNews();
   }, []);
 
@@ -79,7 +79,7 @@ const News = (props) => {
             <div className="row">
               {articles.map((element) => {
                 return (
-                  <div className="col-md-4" key={element.url}>
+                  <div className="col-md-4 " key={element.url}>
                     <NewsItem
                       title={element.title ? element.title.slice(0, 45) : ""}
                       description={
@@ -104,7 +104,7 @@ const News = (props) => {
   );
 };
 const intialProps = {
-  country: "in",
+  country: "us",
   pageSize: 8,
   category: "general",
 };

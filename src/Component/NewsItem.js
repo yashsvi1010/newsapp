@@ -3,10 +3,11 @@ import React from "react";
 const NewsItem = (props) => {
   let { title, description, imageUrl, newsUrl, author, date, source } = props;
   return (
-    <div className="my-3">
-      <div className="card">
+    <div className="my-3 ">
+      <div className="card news-card">
         <div
           style={{
+            zIndex: "1000",
             diaplay: "flex",
             justifyContent: "flex-end",
             position: "absolute",

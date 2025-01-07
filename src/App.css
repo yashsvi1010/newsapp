@@ -1,12 +1,35 @@
 .App {
   text-align: center;
 }
-
+body {
+  font-family: "Orbitron", cursive;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
-
+.navbar {
+  background-color: #44bdde;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.navbar-logo {
+  width: 2rem;
+  height: auto;
+  mix-blend-mode: hard-light;
+}
+.nav-link {
+  border-radius: 10rem;
+}
+.nav-link:hover {
+  background-color: #b5e8fc;
+  box-shadow: 0px 15px 20px rgb(128, 165, 168);
+  color: #000000;
+  transform: translateY(-3px);
+}
+.news-card {
+  border: #282c34 2px solid;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -26,6 +49,17 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.news-card {
+  box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px,
+    rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px,
+    rgba(240, 46, 170, 0.05) 0px 25px;
+}
+@media (max-width: 1010px) {
+  .nav-link {
+    text-align: center;
+  }
 }
 
 @keyframes App-logo-spin {

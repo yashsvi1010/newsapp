@@ -4,10 +4,18 @@ import { Link } from "react-router-dom";
 const NavBar = () => {
   return (
     <div>
-      <nav className="navbar fixed-top navbar-expand-lg bg-body-tertiary">
+      <nav
+        className="navbar sticky-top navbar-expand-lg py-3"
+        style={{ backgroundColor: "rgb(179, 201, 218)" }}
+      >
         <div className="container-fluid">
-          <a className="navbar-brand" to="/">
-            NewsHooter
+          <a className="navbar-brand conatiner fw-bold" to="/">
+            NewsHooter{" "}
+            <img
+              className="navbar-logo"
+              src="./newsHooter-logo.png"
+              alt="nav-logo"
+            />
           </a>
           <button
             className="navbar-toggler"
@@ -21,7 +29,7 @@ const NavBar = () => {
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+            <ul className="navbar-nav me-auto mb-2 mb-lg-0 fw-bolder navbar-nav-scroll">
               <li className="nav-item">
                 <Link className="nav-link active" aria-current="page" to="/">
                   Home
@@ -29,42 +37,42 @@ const NavBar = () => {
               </li>
               <li className="nav-item">
                 <Link className="nav-link" to="/about">
-                  about
+                  About
                 </Link>
               </li>
               <li className="nav-item">
                 <Link className="nav-link" to="/entertainment">
-                  entertainment
+                  Entertainment
                 </Link>
               </li>
               <li className="nav-item">
                 <Link className="nav-link" to="/business">
-                  business
+                  Business
                 </Link>
               </li>
               <li className="nav-item">
                 <Link className="nav-link" to="/general">
-                  general
+                  General
                 </Link>
               </li>
               <li className="nav-item">
                 <Link className="nav-link" to="/health">
-                  health
+                  Health
                 </Link>
               </li>
               <li className="nav-item">
                 <Link className="nav-link" to="/science">
-                  science
+                  Science
                 </Link>
               </li>
               <li className="nav-item">
                 <Link className="nav-link" to="/sports">
-                  sports
+                  Sports
                 </Link>
               </li>
               <li className="nav-item">
                 <Link className="nav-link" to="/technology">
-                  technology
+                  Technology
                 </Link>
               </li>
             </ul>
